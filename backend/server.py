@@ -43,7 +43,7 @@ def predict():
 
 
 if __name__ == "__main__":
-    model = load(pathlib.Path("house-pricing.joblib"))
-    x_scaler = load(pathlib.Path("x-data-scaler.joblib"))
-    y_scaler = load(pathlib.Path("y-data-scaler.joblib"))
+    model = load(pathlib.Path("backend/house-pricing.joblib"))
+    x_scaler = load(pathlib.Path("backend/x-data-scaler.joblib"))
+    y_scaler = load(pathlib.Path("backend/y-data-scaler.joblib"))
     app.run(host="0.0.0.0")
