@@ -1,0 +1,33 @@
+.house-value-form {
+  display: grid;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  flex-direction: row;
+  background: gray;
+  padding: 16px;
+  border-radius: 5px;
+}
+
+.house-value-form-input {
+  width: 350px;
+  font-size: 1.1rem;
+  background-color: white;
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 2px solid #00471b;
+}
+
+.submit-button {
+  margin: 8px;
+  padding: 5px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #00471b;
+  color: white;
+  text-transform: capitalize;
+}
