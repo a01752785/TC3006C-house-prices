@@ -1,5 +1,6 @@
 from data_scaler import DataScaler
 from flask import Flask, jsonify, request
+from flask_cors import CORS
 from joblib import load
 import numpy as np
 import pandas as pd
@@ -8,6 +9,7 @@ from sklearn.linear_model import Lasso
 from typing import Optional
 
 app = Flask(__name__)
+CORS(app)
 
 model: Optional[Lasso] = None
 x_scaler: Optional[DataScaler] = None
